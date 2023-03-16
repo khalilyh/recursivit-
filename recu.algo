@@ -1,0 +1,21 @@
+ALGORITHM palaindrom 
+VAR
+    word:STRING;
+BEGIN
+    word =("Enter the word to be checked")
+    if length(word) <= 1 then
+        return "Palindrome"
+    end if
+    start = 0
+    end = length(word) - 1
+    while start <= end do
+        
+        if word[start] != word[end] then
+            return "Not Palindrome"
+        end if
+        start = start + 1
+        end = end - 1
+    end while
+    return "Palindrome"
+End
+END
